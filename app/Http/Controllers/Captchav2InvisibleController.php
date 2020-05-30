@@ -9,7 +9,10 @@ class Captchav2InvisibleController extends Controller
 {
     public function index()
     {
-        return view('captchav2-invisible');
+        $site_key = \config('captcha.v2-invisible-site-key');
+
+        return view('captchav2-invisible')
+            ->with('site_key', $site_key);
     }
 
     public function store(Request $request)

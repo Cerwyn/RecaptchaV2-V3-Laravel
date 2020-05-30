@@ -9,7 +9,10 @@ class Captchav2CheckboxController extends Controller
 {
     public function index()
     {
-        return view('captchav2-checkbox');
+        $site_key = \config('captcha.v2-checkbox-site-key');
+
+        return view('captchav2-checkbox')
+            ->with('site_key', $site_key);
     }
 
     public function store(Request $request)

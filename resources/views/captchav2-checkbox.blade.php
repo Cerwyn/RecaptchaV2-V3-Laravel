@@ -79,7 +79,7 @@
                       <label>Password</label>
                       <input type="password" class="form-control" id="password" name="password " placeholder="Password">
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6Lf89v0UAAAAAHT6kZf5HG6BDBKsV5gBzSDupC9_"></div>
+                    <div class="g-recaptcha" data-sitekey="{{ $site_key }}"></div>
                     <button class="g-recaptcha btn btn-primary" 
                         type="submit">Submit</button>
                   </form>

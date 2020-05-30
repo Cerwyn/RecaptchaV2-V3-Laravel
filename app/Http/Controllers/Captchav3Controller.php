@@ -10,7 +10,10 @@ class Captchav3Controller extends Controller
 
     public function index()
     {
-        return view('captchav3');
+        $site_key = \config('captcha.v3-site-key');
+
+        return view('captchav3')
+            ->with('site_key', $site_key);
     }
 
     public function store(Request $request)

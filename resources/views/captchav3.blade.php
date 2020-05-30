@@ -85,7 +85,7 @@
                       <input type="password" class="form-control" id="password" name="password " placeholder="Password">
                     </div>
                     <button class="g-recaptcha btn btn-primary" 
-                        data-sitekey="6Ldsuf0UAAAAAHbn4d35Iqq7UOpIaGQRFsSJdGpr" 
+                        data-sitekey="{{ $site_key }}" 
                         data-callback='onSubmit' 
                         data-action='submit'>Submit
                     </button>

@@ -85,7 +85,7 @@
                       <input type="password" class="form-control" id="password" name="password " placeholder="Password">
                     </div>
                     <button class="g-recaptcha btn btn-primary" 
-                        data-sitekey="6Ldd9v0UAAAAALB05QO2FT_tWRUOZ_ZEMvMujr4M" 
+                        data-sitekey="{{ $site_key }}" 
                         data-callback='onSubmit'>Submit</button>
                   </form>
                   @if(Session::has('payload'))
